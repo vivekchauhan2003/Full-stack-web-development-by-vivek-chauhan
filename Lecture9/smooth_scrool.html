@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Optional CSS for the target element (e.g., to add some spacing) */
+        #target {
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Smooth Scrool code by ChatGPT :)</h1>
+    <a href="#target" id="scrollButton">Scroll to Target</a>
+    <div style="height: 1000px;"></div>
+    <div id="target">This is the target element</div>
+
+    <script>
+        document.getElementById("scrollButton").addEventListener("click", function (event) {
+            event.preventDefault();
+
+            // Determine the target element's position
+            const target = document.querySelector(event.target.getAttribute("href"));
+            const targetPosition = target.getBoundingClientRect().top;
+
+            // Smoothly scroll to the target element
+            window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth"  // This enables smooth scrolling
+            });
+        });
+    </script>
+</body>
+</html>

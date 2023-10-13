@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(247, 247, 233);
+    color: brown;
+    /* font-style: oblique; */
+
+    /* Class */
+    .brothers{
+        font-style: italic;
+        background-color: rgb(0, 0, 255);
+        /* background colour will show only when id colour is not set ! */
+    }
+    .real_bros{
+        color: red;
+    }
+
+    /* ID */
+    #Vivek{
+        background-color: aquamarine;
+        /* if we comment out above line then class colour will show */
+    }
+
+    #Vaibhav{
+        background-color: aqua;
+    }
+
+    #Error404{
+        color: white;
+    }
+}

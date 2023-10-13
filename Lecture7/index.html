@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Lets learn it.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Today we will learn forms :</h1>
+    <hr>
+    <div>
+        <h3>Text :</h3>
+        <label for="username">Enter Username :</label>
+        <input type="text" id="username_001" name="username" placeholder="Hey! what is your name">
+    </div>
+    <hr>
+    <h3>Radio :</h3>
+    <div>
+
+        <label for="Male_">i'm Male</label>
+        <input type="radio" id="Male_1" name="gender_option_1">
+        <label for="Female_">i'm Female</label>
+        <input type="radio" id="Female_1" name="gender_option_1">
+        <p>NOTE : Here the id="Female_" and for="Female_1" are differnet. So, if you click on i'm Female the also the
+            option will NOT selected :(</p>
+    </div>
+    <br>
+    <div>
+        <input type="radio" id="Male" name="gender_option_2">
+        <label for="Male">i'm Male</label>
+        <input type="radio" id="Female" name="gender_option_2">
+        <label for="Female">i'm Female</label>
+        <!-- Note always make for = id -->
+        <p>NOTE : Here the id="Female" and for="Female" both are same. So, if you click on i'm Female the also the
+            option is selected :)</p>
+    </div>
+    <hr>
+    <div>
+        <h3>Checkbox :</h3>
+
+        <div>
+            <label for="Games">I like Java</label>
+            <input type="checkbox" id="Games" name="Java">
+        </div>
+        <div>
+            <label for="Games">I like DSA</label>
+            <input type="checkbox" id="Games" name="DSA">
+        </div>
+        <div>
+            <label for="Games">I like Web Dev</label>
+            <input type="checkbox" id="Games" name="Web Dev">
+        </div>
+        <div>
+            <label for="Games">I like C++</label>
+            <input type="checkbox" id="Games" name="C++">
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h3>Textarea : </h3>
+        <label for="feedback_bby"> Feedback box- </label>
+        <textarea name="feedback_bby" id="feedback_bby" cols="50" rows="5"
+            placeholder="Hey! Enter you valueable Feedback here :) "></textarea>
+    </div>
+    <hr>
+    <div>
+        <h3>Select :</h3>
+        <select name="state" id="state">
+            <option value="U.P">Uttar Pradesh</option>
+            <option value="U.K">Uttrakhand</option>
+            <option value="GOA">Goa</option>
+        </select>
+        <hr>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
